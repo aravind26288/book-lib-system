@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manage page handles adding book details 1`] = `ShallowWrapper {}`;

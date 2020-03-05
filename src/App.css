@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* custom css */
+body{background-color: #EFEFEF;}
+.bg-dark-blue{background-color: #173c62;}
+.txt-center{text-align: center;}
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
+.book-lib-app__navbar{color: #FFF;}
+.book-lib-app__navbar a, .book-lib-app__navbar a:link, .book-lib-app__navbar a:hover, .book-lib-app__navbar a:visited, .book-lib-app__navbar a:active{
+  color: #FFF;
+}
+.book-lib-app__content-wrapper{min-height: 490px; background: #FFF; box-shadow: 1px 1px 6px 0px #173c62;}
+.book-lib-app__content-title{
+  border-bottom: 2px solid #173c62;  padding: 10px 0;
+  font-size: 15px;  font-weight: bold;  color: #666;
+}
+.book-lib-app__content-wrapper input{
+  border: 1px solid #173c62;  color: #173c62;
+  border-radius: 20px;  padding: 10px 20px;
+  height: 50px;  font-size: 14px;
+}
+.book-lib-app__action-btn{padding: 6px 30px; min-width: 120px;}
+.book-lib-app__action-btn--submit{border: 1px solid #173c62;}
+.book-lib-app__action-btn--cancel{border: 1px solid inherit;}
+.book-lib-app__content-wrapper input:focus, .manage-books-form input:focus{
+  box-shadow: 0 1px 3px 1px #173c62;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.manage-books-form__title{color: #173c62; font-size: 16px;}
+.manage-books-form__label{font-size: 14px;}
+.manage-books-form__input{
+  border: 1px solid #173c62; color: #173c62;
+  border-radius: 2px; padding: 10px 10px;
+  height: 40px; font-size: 14px;
+}
+.book-lib-table th, .book-lib-table td{font-size: 14px;}
+.book-lib-table th{background-color: #173c62; color: #FFF;}
+.book-lib-app__book{
+  border: 1px solid #d1d2d3; padding: 20px;
+  margin-bottom: 10px; box-shadow: 0px 0px 1px 0px #173c62;
+}
+.book-lib-app__book-txtLabel{font-weight: bold;}
+.book-lib-app__loading-indicator{position: absolute; top: 40%; left: 40%;}
+.book-lib-app__footer{position: static; bottom: 0; background: rgba(5,5,5, 0.9); color: #FFF; padding: 10px;}
+.book-lib-app__footer-content{text-align: center; font-size: 13px;}
+
+@media (max-width: 768px){
+  .book-lib-table table, thead, tbody, tr, th, td{display: block;}
+  .book-lib-table thead tr{position: absolute; top: -9999px;left: -9999px;}
+  td.book-lib-table-col{position: relative; padding-left: 50%;}
+  td.book-lib-table-col:before{
+    position: absolute; padding-right: 5px; white-space: nowrap; top: 10px;
+    left: 10px; width: 45%; font-weight: bold;
+  }
+  td.book-lib-table-col:nth-of-type(1):before { content: "Sl.No"; }
+	td.book-lib-table-col:nth-of-type(2):before { content: "Book Name"; }
+	td.book-lib-table-col:nth-of-type(3):before { content: "Description"; }
+	td.book-lib-table-col:nth-of-type(4):before { content: "Author"; }
+}
